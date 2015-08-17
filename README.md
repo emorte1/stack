@@ -1,2 +1,5 @@
 To start: 
-`npm run dev` in the node.js console
+ `cd ..\copy`
+ `npm install`
+ `npm run dev` in the node.js console
+ 
