@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Gittin' wit it!",
   "author": "Ericka Morterud",
+  "scripts": {
+	"dev": "gulp"
+  },
   "devDependencies": {
     "gulp": "~3.6.2",
     "gulp-concat": "~2.1.7",

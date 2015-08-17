@@ -51,12 +51,20 @@ gulp.task('express', function() {
   app.listen(1337);
   gutil.log('Listening on port: 1337');
 });
+
+
+gulp.task('reload-static', function() {
+  return gulp.src('dist/**/*').
+    pipe( livereload( server ));
+});
  
 gulp.task('watch', function () {
   server.listen(35729, function (err) {
     if (err) {
       return console.log(err);
     }
+	
+    gulp.watch('dist/**/*',['reload-static']);
  
     gulp.watch('src/assets/stylesheets/*.styl',['css']);
  
